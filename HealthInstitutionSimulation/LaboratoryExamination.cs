@@ -27,6 +27,6 @@ namespace HealthInstitutionSimulation
         /// <summary>
         /// Method for performing laboratory examination
         /// </summary>
-        void PerformLabTest();
+        void PerformLabTest(Patient patient);
     }
 }

@@ -41,7 +41,7 @@ namespace HealthInstitutionSimulation
         /// Log for choosing doctor
         /// </summary>
         /// <param name="patient">Patient</param>
-        internal void LogChooseDoctor(Patient patient)
+        internal void LogChooseDoctor(Patient patient) 
         {
             try
             {

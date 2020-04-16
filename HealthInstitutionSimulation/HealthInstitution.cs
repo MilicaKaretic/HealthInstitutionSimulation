@@ -66,9 +66,9 @@ namespace HealthInstitutionSimulation
         /// <param name="lab">Laboratory examination</param>
         /// <param name="patient">Patient</param>
         /// <param name="doctor">Doctor</param>
-        public void PerformExamination(LaboratoryExamination lab, Patient patient, Doctor doctor)
+        public void PerformExamination(LaboratoryExamination lab, Patient patient)
         {
-            lab.PerformLabTest();
+            lab.PerformLabTest(patient);
         }
     }
 }

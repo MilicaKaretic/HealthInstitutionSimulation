@@ -29,11 +29,12 @@ namespace HealthInstitutionSimulation
         /// <summary>
         /// Implemented method from iterface for performing test
         /// </summary>
-        public void PerformLabTest()
+        public void PerformLabTest(Patient pat)
         {
             UpValue = rnd.Next(90, 120);
             DownValue = rnd.Next(60, 80);
             Pulse = rnd.Next(60, 100);
+            Patient = pat;
         }
 
         /// <summary>

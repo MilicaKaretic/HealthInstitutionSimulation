@@ -20,15 +20,17 @@ namespace HealthInstitutionSimulation
         /// <returns>Test result</returns>
         public string GetResults()
         {
-            return "Blood sugar results: Your previous meal was at " + LastMealTime + ". Blood sugar levels are " + Value;
+            return "Blood sugar results: Your previous meal was at " + LastMealTime + ". Blood sugar levels are " + Value.ToString("00.00");
         }
 
         /// <summary>
         /// Implemented method from iterface for performing test
         /// </summary>
-        public void PerformLabTest()
+        public void PerformLabTest(Patient pat)
         {
-            Value = GetRandomNumber(4.0, 5.4);            
+            Value = GetRandomNumber(4.0, 5.4);
+            LastMealTime = DateTime.Now.AddHours(-12);
+            Patient = pat;
         }
 
         /// <summary>

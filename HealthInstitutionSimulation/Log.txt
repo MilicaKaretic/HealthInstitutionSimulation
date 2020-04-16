@@ -1,0 +1,9 @@
+[4/16/2020 12:52:45 PM] Doctor created 'Milan'
+[4/16/2020 12:52:45 PM] Patient created 'Dragan'
+[4/16/2020 12:52:45 PM] Patient 'Dragan' choosed doctor 'Milan'
+[4/16/2020 12:52:45 PM] Doctor 'Milan' has scheduled examination 'Blood sugar' for patient 'Dragan'
+[4/16/2020 12:52:45 PM] Doctor 'Milan' has scheduled examination 'Blood pressure' for patient 'Dragan'
+[4/16/2020 12:52:45 PM] Patient 'Dragan' performed examination 'Blood sugar'
+Blood sugar results: Your previous meal was at 4/16/2020 12:52:45 AM. Blood sugar levels are 04.21
+[4/16/2020 12:52:45 PM] Patient 'Dragan' performed examination 'Blood pressure'
+Blood pressure results: Upper pressure: 99, lower pressure: 69. Pulse: 64

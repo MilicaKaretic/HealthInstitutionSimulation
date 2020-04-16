@@ -28,9 +28,10 @@ namespace HealthInstitutionSimulation
         /// <summary>
         /// Implemented method from iterface for performing test
         /// </summary>
-        public void PerformLabTest()
+        public void PerformLabTest(Patient pat)
         {
             Value = rnd.Next(0, 200);
+            Patient = pat;
         }
 
         /// <summary>
@@ -43,6 +44,7 @@ namespace HealthInstitutionSimulation
         {
             DateAndTime = Schedule;
             Name = "Blood cholesteroll level";
+            Patient = pat;
         }
     }
 }
