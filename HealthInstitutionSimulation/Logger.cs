@@ -3,14 +3,21 @@ using System.IO;
 
 namespace HealthInstitutionSimulation
 {
+    /// <summary>
+    /// Class for logging actions to file
+    /// </summary>
     class Logger
     {
         //impelementing Singleton design pattern
         private static Logger _instance;
 
+        //file location
         private string loc;
 
-        private Logger()  // Constructor as Private
+        /// <summary>
+        /// Private constructor without parameters
+        /// </summary>
+        private Logger()  
         {
             loc = @"..\..\Log.txt";
         }
@@ -70,7 +77,7 @@ namespace HealthInstitutionSimulation
         /// Log create new doctor
         /// </summary>
         /// <param name="person">Doctor</param>
-        public void LogCreateDoctor(Doctor person)
+        internal void LogCreateDoctor(Doctor person)
         {
             try
             {
@@ -89,7 +96,7 @@ namespace HealthInstitutionSimulation
         /// Log schedule examination
         /// </summary>
         /// <param name="lab">Laboratiory examination for logging</param>
-        public void LogScheduleExamination(LaboratoryExamination lab)
+        internal void LogScheduleExamination(LaboratoryExamination lab)
         {
             try
             {
@@ -107,7 +114,7 @@ namespace HealthInstitutionSimulation
         /// Log permorming examination
         /// </summary>
         /// <param name="lab">Performed laboratory examination</param>
-        public void LogPerform(LaboratoryExamination lab)
+        internal void LogPerform(LaboratoryExamination lab)
         {
             try
             {
@@ -125,7 +132,7 @@ namespace HealthInstitutionSimulation
         /// Log examination results
         /// </summary>
         /// <param name="lab">Laboratory examination type</param>
-        public void LogTestResult(LaboratoryExamination lab)
+        internal void LogTestResult(LaboratoryExamination lab)
         {
             try
             {

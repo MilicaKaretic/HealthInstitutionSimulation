@@ -12,7 +12,6 @@ namespace HealthInstitutionSimulation
         public string JMBG { get; set; }
         public int HealthRecordNumber { get; set; }
         public Doctor Doctor { get; set; }
-        public List<LaboratoryExamination> Examinations { get; set; }
 
         /// <summary>
         /// Constructor without parameters

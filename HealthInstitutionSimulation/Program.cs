@@ -21,25 +21,33 @@ namespace HealthInstitutionSimulation
             patient.ChooseDoctor(doctor);
             log.LogChooseDoctor(patient);
 
-            ScheduleExamination sheduleEx = new ScheduleExamination();
+            HealthInstitution health = new HealthInstitution();
 
             BloodSugarLevel bs = new BloodSugarLevel();
             BloodPressure bp = new BloodPressure();
 
-            sheduleEx.Schedule(bs, patient, doctor);
+            health.addLab(bs);
+            health.addLab(bp);
+
+            health.Schedule(bs, patient, doctor);
             log.LogScheduleExamination(bs);
 
-            sheduleEx.Schedule(bp, patient, doctor);
+            health.Schedule(bp, patient, doctor);
             log.LogScheduleExamination(bp);
 
-            sheduleEx.DoTest(bs, patient, doctor);
+            health.PerformExamination(bs, patient, doctor);
             log.LogPerform(bs);
             log.LogTestResult(bs);
 
-            sheduleEx.DoTest(bp, patient, doctor);
+            health.PerformExamination(bp, patient, doctor);
             log.LogPerform(bp);
             log.LogTestResult(bp);
 
+            //List<LaboratoryExamination> list =  health.getAllExaminations();
+            //for (int i = 0; i < list.Count; i++)
+            //{
+            //    Console.WriteLine(list[i].Name);
+            //}
             Console.ReadKey();
         }
     }
